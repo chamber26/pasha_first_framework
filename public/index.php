@@ -35,7 +35,6 @@ $db_options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
 
     $db = new PDO ($db_path, $db_user, $db_pass, $db_options);
 
-
 $try = $db->query("SELECT login FROM users ORDER BY name LIMIT 12");
 $try_result = $try->fetchAll(PDO::FETCH_ASSOC);
 
